@@ -1,0 +1,628 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>Troupe de théâtre Entr'Amis Lévis</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Polices -->
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+  <!-- Icônes -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<!-- RIDEAU D’OUVERTURE -->
+<div id="rideau-gauche"></div>
+<div id="rideau-droit"></div>
+
+<header>
+  <div class="header-inner">
+
+    <a href="#accueil">
+      <img src="Images/logo noir.png" alt="Logo de la troupe Entr'Amis Lévis">
+    </a>
+
+    <nav>
+      <a href="#accueil">Accueil</a>
+      <a href="#spectacles">Spectacles</a>
+      <a href="#apropos">À propos</a>
+      <a href="#productions">Productions passées</a>
+      <a href="#equipe">Équipe</a>
+      <a href="#galerie">Galerie</a>
+      <a href="#partenaires">Partenaires</a>
+      <a href="#contact">Contact</a>
+    </nav>
+
+    <div class="header-actions desktop-only">
+      <button class="header-btn">🎟️ Billets</button>
+      <button class="header-btn">🤝 Formulaire de commandite</button>
+    </div>
+
+    <div class="hamburger" id="hamburger">
+      <i class="fa-solid fa-bars"></i>
+    </div>
+  </div>
+</header>
+
+<!-- MENU MOBILE DÉPLACÉ ICI -->
+  <div id="menu-mobile">
+    <a href="#accueil">Accueil</a>
+    <a href="#spectacles">Spectacles</a>
+    <a href="#apropos">À propos</a>
+    <a href="#productions">Productions passées</a>
+    <a href="#equipe">Équipe</a>
+    <a href="#galerie">Galerie</a>
+    <a href="#partenaires">Partenaires</a>
+    <a href="#contact">Contact</a>
+
+    <div class="mobile-actions">
+      <button class="header-btn"
+        onclick="window.open('https://lepointdevente.com/billets/entramis2026','_blank')">
+        🎟️ Billets
+      </button>
+
+      <button class="header-btn"
+        onclick="window.open('mailto:entramislevis@gmail.com')">
+        🤝 Formulaire de commandite
+      </button>
+    </div>
+  </div>
+<div id="breadcrumb">Accueil</div>
+
+<!-- ACCUEIL -->
+<section id="accueil">
+  <h1>Troupe de théâtre <span>Entr'Amis Lévis</span></h1>
+  <p>
+    Une troupe de théâtre amateur basée à Lévis, portée par l’amitié, le plaisir du jeu
+    et le désir de partager des histoires vivantes avec le public.
+  </p>
+  <a href="#spectacles" class="btn">Voir le spectacle à l’affiche</a>
+</section>
+
+<!-- SPECTACLES -->
+<section id="spectacles">
+  <h2><i class="fa-solid fa-masks-theater icon"></i>À l’affiche</h2>
+
+  <div class="spectacle-block">
+
+    <h3>Enfant insignifiant ! — Michel Tremblay</h3>
+    <p class="dates">10, 11 et 12 avril 2026</p>
+
+    <!-- AFFICHE CLIQUABLE -->
+    <div class="affiche-wrapper">
+      <img src="Images/affiche-enfant-insignifiant.png" 
+           alt="Affiche Enfant Insignifiant" 
+           class="affiche-temporaire"
+           id="affiche-click">
+    </div>
+
+    <!-- RÉSUMÉ CACHÉ POUR LA LIGHTBOX -->
+    <div class="details-affiche" style="display:none;">
+      <h3>Enfant insignifiant ! — Michel Tremblay</h3>
+      <p>
+        Alors qu’il vient de terminer l’écriture de sa pièce <em>Enfant insignifiant !</em>, 
+        Michel Tremblay voit ses personnages le rejoindre et lui jouer les scènes de sa 
+        prime jeunesse qu’il vient d’écrire. Les souvenirs d’un homme vieillissant deviennent 
+        l’occasion de dialogues savoureux et cocasses où la mauvaise foi de l’enfant 
+        s’enroule à celles de sa mère Nana, de son père Gabriel, de sa grand-mère Victoire, 
+        de son amie Ginette, etc.
+      </p>
+      <p>
+        Ces conversations avec l’enfant curieux qu’était l’auteur à l’époque où il n’en 
+        finissait pas de questionner le monde – de vouloir en comprendre le sens et 
+        l’organisation, l’étrange mouvement de ses mystères et de ses mensonges – nous 
+        en apprennent beaucoup sur l’origine de son œuvre dramatique et romanesque.
+      </p>
+      <p>
+        Le premier vrai monde de Michel Tremblay, celui de sa famille, s’y trouve révélé 
+        dans toute sa merveilleuse humanité, avec une bonne dose de franche hilarité.
+      </p>
+    </div>
+
+    <!-- TEXTE COURT SUR LA PAGE -->
+    <p>
+      Une œuvre tendre, drôle et profondément humaine où Michel Tremblay explore 
+      l’enfance, la famille, les rêves et les blessures qui façonnent une vie. 
+      À travers le regard d’un jeune garçon passionné de théâtre, l’auteur nous 
+      plonge dans un Montréal populaire des années 1950, entre humour, lucidité 
+      et émotion.
+    </p>
+
+    <!-- INFOS PRATIQUES -->
+  <div class="infos-spectacle">
+      <p class="lieu">
+        <strong>Lieu :</strong> Auditorium du Collège de Lévis — 55 Rue du Mont-Marie, Lévis, QC
+        <button class="btn-inline"
+          onclick="window.open('https://www.google.com/maps/place/55+Rue+du+Mont-Marie,+Lévis,+QC+G6V+0B8', '_blank')">
+          📍 Google Maps
+        </button>
+      </p>
+      <p>
+        
+      </p>
+
+      <p class="billetterie">
+        <strong>Billetterie :</strong>
+        <button class="btn-inline"
+          onclick="window.open('https://lepointdevente.com/billets/entramis2026', '_blank')">
+          🎟️ Acheter vos billets
+        </button>
+     
+    </div> </p>
+
+</div>
+
+</section>
+
+<!-- À PROPOS -->
+<section id="apropos">
+  <h2>À propos d'<span style="color:var(--rouge)">Entr'Amis Lévis</span></h2>
+
+  <p>
+    Fondée en 1997, la Troupe Entr'Amis Lévis œuvre depuis près de trois décennies à faire rayonner 
+    le théâtre amateur dans la région. Bien que ses activités aient débuté en 1997, la troupe a été 
+    officiellement constituée comme personne morale sans capital-actions lors de sa première 
+    assemblée générale annuelle en juin 2012.
+  </p>
+
+  <p>
+    Depuis ses débuts, Entr'Amis se distingue par son esprit de camaraderie, son désir de créer 
+    des spectacles accessibles et humains, et sa volonté de rassembler des passionné(e)s de tous 
+    horizons autour d’un même amour : le théâtre.
+  </p>
+
+  <h2><span style="color:var(--rouge)">Notre mission</span></h2>
+
+  <div class="mission-container">
+    <div class="mission-card">
+      <i class="fa-solid fa-masks-theater"></i>
+      <h4>Créer</h4>
+      <p>Offrir des spectacles accessibles, humains et ancrés dans la passion du jeu.</p>
+    </div>
+    <div class="mission-card">
+      <i class="fa-solid fa-people-group"></i>
+      <h4>Rassembler</h4>
+      <p>Faire de la troupe un lieu d’amitié, d’accueil et de collaboration pour tous.</p>
+    </div>
+    <div class="mission-card">
+      <i class="fa-solid fa-seedling"></i>
+      <h4>Faire grandir</h4>
+      <p>Encourager l’émergence de nouveaux talents et soutenir le théâtre amateur à Lévis.</p>
+    </div>
+  </div>
+</section>
+<!-- PRODUCTIONS PASSÉES -->
+<section id="productions">
+  <h2><span style="color:var(--rouge)">Productions</span> passées</h2>
+
+  <div class="productions-grid">
+
+    <!-- 2024 -->
+    <div class="production-item">
+      <img src="Images/affiche-2024.jpg" alt="Affiche de la pièce Maman est là! (2024)">
+      <h4>2024 — Maman est là!</h4>
+      <p>Pièce écrite par Jean-Philippe Combe</p>
+      <p>Mise en scène par Andréanne Béland</p>
+
+      <!-- Détails invisibles pour la lightbox -->
+      <div class="details" style="display:none;">
+        <h3>Maman est là! (2024)</h3>
+        <p><strong>Auteur :</strong> Jean-Phillipe Combe</p>
+        <p><strong>Mise en scène :</strong> Andréanne Béland</p>
+        <p><strong>Distribution :</strong></p>
+        <ul>
+          <li>Jean-Paul — Richard Cantin</li>
+          <li>Luc — Nicolas Simard</li>
+          <li>Fleur d'Oranger — Valérie Caron</li>
+          <li>Scarlett — Julie Auclair</li>
+          <li>Le père — Kent Bois</li>
+          <li>Clotilde — Julie St-Laurent</li>
+          <li>Joséphine — Éloïse Boucher</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- 2023 -->
+    <div class="production-item">
+      <img src="Images/affiche-2023.jpg" alt="Affiche de la pièce Où est Charles-Henri? (2023)">
+      <h4>2023 — Où est Charles-Henri?</h4>
+      <p>Pièce écrite par Gaston Côté</p>
+      <p>Mise en scène par Andréanne Béland</p>
+
+      <!-- Détails invisibles -->
+      <div class="details" style="display:none;">
+        <h3>Où est Charles-Henri? (2023)</h3>
+        <p><strong>Auteur :</strong> Gaston Côté</p>
+        <p><strong>Mise en scène :</strong> Andréanne Béland</p>
+        <p><strong>Distribution :</strong></p>
+        <ul>
+          <li>Lucille — Isabelle Côté</li>
+          <li>Gisèle Poitras — Émilie Bergeron</li>
+          <li>Bruno Goulet — Gaston Côté</li>
+          <li>Clara — Valérie Caron</li>
+          <li>Thérèse — Julie St-Laurent</li>
+          <li>Ernest — Richard Cantin</li>
+          <li>Ghislaine — Raymonde Gagné</li>
+          <li>Katie &amp; Annick — Majorie Gagnon</li>
+          <li>M. Gingras, Francesca, Lyvia — Anne-Émélie Brais</li>
+          <li>Maurice &amp; Keveun — Sylvain Brindamour</li>
+        </ul>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- ÉQUIPE -->
+<section id="equipe" class="section-velours">
+  <h2><span style="color:var(--rouge)">Équipe</span> & conseil d’administration</h2>
+
+  <div class="card">
+    <h3>Conseil d’administration 2025-2026</h3>
+
+    <div class="conseil-grid">
+
+      <div class="conseil-item" data-img="Images/conseil-jean.jpg">
+        <img src="Images/conseil-jean.jpg" alt="Jean Boucher">
+        <p>Jean Boucher<br><span>Président-trésorier</span></p>
+
+        <div class="details" style="display:none;">
+          <h3>Jean Boucher</h3>
+          <p>Président-trésorier de la troupe, Jean est un pilier de l’organisation. 
+          Rigoureux, calme et toujours disponible, il veille à la santé financière 
+          de la troupe tout en soutenant activement les activités de celle-ci. 
+          Son sens de l’organisation et son dévouement permettent à Entr’Amis Lévis 
+          de grandir année après année.</p>
+        </div>
+      </div>
+
+      <div class="conseil-item" data-img="Images/conseil-colombe.jpg">
+        <img src="Images/conseil-colombe.jpg" alt="Colombe Brochu">
+        <p>Colombe Brochu<br><span>Secrétaire</span></p>
+
+        <div class="details" style="display:none;">
+          <h3>Colombe Brochu</h3>
+          <p>Secrétaire du conseil, Colombe est reconnue pour sa précision, 
+          sa mémoire impressionnante et son efficacité. Elle assure le suivi 
+          administratif, coordonne les communications internes et veille à ce 
+          que chaque réunion soit productive et bien documentée.</p>
+        </div>
+      </div>
+
+      <div class="conseil-item" data-img="Images/conseil-rosalie.jpg">
+        <img src="Images/conseil-rosalie.jpg" alt="Rosalie Le Pennec">
+        <p>Rosalie Le Pennec<br><span>Responsable des communications</span></p>
+
+        <div class="details" style="display:none;">
+          <h3>Rosalie Le Pennec</h3>
+          <p>Responsable des communications, Rosalie apporte une énergie créative 
+          et moderne à la troupe. Elle gère les réseaux sociaux, la promotion 
+          des spectacles et l’image publique d’Entr’Amis Lévis. Sa sensibilité 
+          artistique et son sens du visuel donnent une identité forte à la troupe.</p>
+        </div>
+      </div>
+
+      <div class="conseil-item" data-img="Images/conseil-catherine.jpg">
+        <img src="Images/conseil-catherine.jpg" alt="Catherine Chabot">
+        <p>Catherine Chabot<br><span>Coordonnatrice de production</span></p>
+
+        <div class="details" style="display:none;">
+          <h3>Catherine Chabot</h3>
+          <p>Coordonnatrice de production et petite nouvelle du conseil d’administration, 
+  Catherine s’est rapidement imposée comme une présence essentielle. Organisée, 
+  efficace et dotée d’un calme rassurant, elle apporte un regard neuf et une 
+  énergie rafraîchissante à la troupe. Grâce à son sens du détail et à sa 
+  disponibilité, elle contribue à rendre chaque projet plus fluide et agréable 
+  pour toute l’équipe.</p>
+</div>
+
+      </div>
+
+      <div class="conseil-item" data-img="Images/conseil-sandy.jpg">
+        <img src="Images/conseil-sandy.jpg" alt="Sandy Fillion">
+        <p>Sandy Fillion<br><span>Vice-présidente</span></p>
+
+        <div class="details" style="display:none;">
+          <h3>Sandy Fillion</h3>
+          <p>Vice-présidente, Sandy est une force rassembleuse. Toujours prête 
+          à aider, elle soutient autant l’équipe artistique que l’équipe 
+          administrative. Son leadership bienveillant et son enthousiasme 
+          contagieux contribuent à maintenir une ambiance chaleureuse 
+          au sein de la troupe.</p>
+        </div>
+      </div>
+
+      <div class="conseil-item" data-img="Images/conseil-olivier.jpg">
+        <img src="Images/conseil-olivier.jpg" alt="Olivier Roy">
+        <p>Olivier Roy<br><span>Coordonnateur de production</span></p>
+
+        <div class="details" style="display:none;">
+          <h3>Olivier Roy</h3>
+          <p>Coordonnateur de production, Olivier est reconnu pour sa polyvalence et son sens pratique. Toujours prêt à donner un coup de main, il sait garder son calme même dans les moments les plus chargés. Sa débrouillardise et son esprit d’équipe en font un soutien précieux pour les comédiens comme pour l’organisation, contribuant à la fluidité et à la qualité des activités de la troupe.</p>
+        </div>
+      </div>
+
+      <div class="conseil-item" data-img="Images/conseil-andreanne.jpg">
+  <img src="Images/conseil-andreanne.jpg" alt="Andréanne Béland">
+  <p>Andréanne Béland<br><span>Metteure en scène</span></p>
+
+  <div class="details" style="display:none;">
+    <h3>Andréanne Béland</h3>
+    <p>
+      Metteure en scène passionnée et membre engagée d’Entr’Amis depuis plusieurs années, 
+      Andréanne possède plus d’une corde à son arc. Improvisation, jeu, direction d’acteurs : 
+      rien ne l’arrête. Son énergie contagieuse, sa créativité et son sens du rythme scénique 
+      donnent vie à des productions vibrantes, humaines et profondément ancrées dans l’esprit 
+      de la troupe.
+    </p>
+  </div>
+</div>
+
+    </div>
+  </div>
+</section>
+
+<!-- GALERIE -->
+<section id="galerie">
+  <h2><span style="color:var(--rouge)">Galerie</span> photos</h2>
+
+  <div class="carousel-container">
+    <div class="carousel-track">
+
+      <div class="carousel-item"><img src="Images/photo1.jpg" alt="photo1"></div>
+      <div class="carousel-item"><img src="Images/photo2.jpg" alt="photo2"></div>
+      <div class="carousel-item"><img src="Images/photo3.jpg" alt="photo3"></div>
+      <div class="carousel-item"><img src="Images/photo4.jpg" alt="photo4"></div>
+      <div class="carousel-item"><img src="Images/photo5.jpg" alt="photo5"></div>
+      <div class="carousel-item"><img src="Images/photo6.jpg" alt="photo6"></div>
+      <div class="carousel-item"><img src="Images/photo7.jpg" alt="photo7"></div>
+      <div class="carousel-item"><img src="Images/photo8.jpg" alt="photo8"></div>
+      <div class="carousel-item"><img src="Images/photo9.jpg" alt="photo9"></div>
+      <div class="carousel-item"><img src="Images/photo10.jpg" alt="photo10"></div>
+      <div class="carousel-item"><img src="Images/photo11.jpg" alt="photo11"></div>
+
+      <!-- DUPLICATION POUR BOUCLE FLUIDE -->
+      <div class="carousel-item"><img src="Images/photo1.jpg" alt="photo1"></div>
+      <div class="carousel-item"><img src="Images/photo2.jpg" alt="photo2"></div>
+      <div class="carousel-item"><img src="Images/photo3.jpg" alt="photo3"></div>
+      <div class="carousel-item"><img src="Images/photo4.jpg" alt="photo4"></div>
+      <div class="carousel-item"><img src="Images/photo5.jpg" alt="photo5"></div>
+      <div class="carousel-item"><img src="Images/photo6.jpg" alt="photo6"></div>
+      <div class="carousel-item"><img src="Images/photo7.jpg" alt="photo7"></div>
+      <div class="carousel-item"><img src="Images/photo8.jpg" alt="photo8"></div>
+      <div class="carousel-item"><img src="Images/photo9.jpg" alt="photo9"></div>
+      <div class="carousel-item"><img src="Images/photo10.jpg" alt="photo10"></div>
+      <div class="carousel-item"><img src="Images/photo11.jpg" alt="photo11"></div>
+
+    </div>
+  </div>
+</section>
+
+<!-- PARTENAIRES -->
+<section id="partenaires" >
+  <h2><span style="color:var(--rouge)">Nos</span> partenaires et commanditaires</h2>
+
+  <div class="partners-grid">
+
+    <a href="https://www.desjardins.com" target="_blank" rel="noopener noreferrer">
+      <img src="Images/desjardins.png" alt="Desjardins">
+    </a>
+
+    <a href="https://www.autobusauger.com" target="_blank" rel="noopener noreferrer">
+      <img src="Images/auger.jpeg" alt="Autobus Auger">
+    </a>
+
+    <a href="https://www.jambette.com" target="_blank" rel="noopener noreferrer">
+      <img src="Images/jambette.jpg" alt="Jambette">
+    </a>
+
+    <a href="https://www.collegedelevis.qc.ca/" target="_blank" rel="noopener noreferrer">
+      <img src="Images/college-levis.jpeg" alt="Collège de Lévis">
+    </a>
+
+    <a href="https://www.fromagerievictoria.com" target="_blank" rel="noopener noreferrer">
+      <img src="Images/victoria.jpg" alt="Fromagerie Victoria">
+    </a>
+
+    <a href="https://www.sonoptik.ca/" target="_blank" rel="noopener noreferrer">
+      <img src="Images/sonoptik.jpg" alt="Sonoptik">
+    </a>
+
+    <a href="https://www.ville.levis.qc.ca" target="_blank" rel="noopener noreferrer">
+      <img src="Images/levis.jpg" alt="Ville de Lévis">
+    </a>
+
+    <a href="https://remax1erchoix.com/fr/nos-courtiers/andre-roy.html" target="_blank" rel="noopener noreferrer">
+      <img src="Images/remax.png" alt="RE/MAX André Roy">
+    </a>
+
+    <a href="https://www.gorendezvous.com/en/DOAndree-AnneThibodeau" target="_blank" rel="noopener noreferrer">
+      <img src="Images/osteo.JPG" alt="Ostéopathie Andrée-Anne Thibodeau">
+    </a>
+    
+    <a href="https://www.journaldelevis.com/jdl/accueil.aspx" target="_blank" rel="noopener noreferrer">
+      <img src="Images/logo-jdl.png" alt="Journal de Lévis">
+    </a>
+
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact" class="section-velours">
+  <h2>Nous <span style="color:var(--rouge)">joindre</span></h2>
+  <p><i class="fas fa-map-marker-alt"></i> 5169 Av. des Générations, Charny, QC G6X 2G2</p>
+  <p><i class="fa-solid fa-phone icon"></i> 819 562‑4032</p>
+  <p><i class="fa-solid fa-envelope icon"></i> troupe@entramislevis.ca</p>
+</section>
+<!-- LIGHTBOX -->
+<div class="lightbox" id="lightbox">
+  <span class="lightbox-close" id="lightbox-close">&times;</span>
+  <div class="lightbox-inner" id="lightbox-inner">
+    <img id="lightbox-img" src="" alt="Agrandissement de l’image">
+    <div class="lightbox-content" id="lightbox-content" style="display:none;"></div>
+  </div>
+</div>
+
+<!-- FOOTER -->
+<footer>
+  <span class="footer-logo">
+    <img class="footer-logo-img" src="Images/logoentramis.png" alt="Logo Entr'Amis Lévis">
+  </span>
+
+  <div class="footer-socials">
+
+    <a href="https://www.facebook.com/profile.php?id=100057382032601"
+       target="_blank" rel="noopener noreferrer"
+       class="social-icon"
+       aria-label="Page Facebook de la troupe Entr'Amis Lévis">
+      <i class="fa-brands fa-facebook-f"></i>
+    </a>
+
+    <a href="https://www.instagram.com/entr.amislevis/"
+       target="_blank" rel="noopener noreferrer"
+       class="social-icon"
+       aria-label="Compte Instagram de la troupe Entr'Amis Lévis">
+      <i class="fa-brands fa-instagram"></i>
+    </a>
+
+    <a href="mailto:troupe@entramislevis.ca"
+       class="social-icon"
+       aria-label="Envoyer un courriel à la troupe Entr'Amis Lévis">
+      <i class="fa-solid fa-envelope"></i>
+    </a>
+
+  </div>
+
+  <p class="signature">Entr'Amis Lévis — Le théâtre, entre amis.</p>
+  <p>© Troupe de théâtre Entr'Amis Lévis — Tous droits réservés</p>
+</footer>
+
+<!-- SCRIPT -->
+<script>
+/* MENU MOBILE */
+const hamburger = document.getElementById('hamburger');
+const menuMobile = document.getElementById('menu-mobile');
+
+hamburger.addEventListener('click', () => {
+  menuMobile.classList.toggle('open');
+});
+
+document.querySelectorAll('#menu-mobile a').forEach(link => {
+  link.addEventListener('click', () => {
+    setTimeout(() => menuMobile.classList.remove('open'), 200);
+  });
+});
+menuMobile.addEventListener("click", e => {
+  if (e.target === menuMobile) {
+    menuMobile.classList.remove("open");
+  }
+});
+
+/* LIGHTBOX */
+const lightbox = document.getElementById("lightbox");
+const lightboxImg = document.getElementById("lightbox-img");
+const lightboxContent = document.getElementById("lightbox-content");
+const closeBtn = document.getElementById("lightbox-close");
+
+/* OUVERTURE : images de la galerie */
+document.querySelectorAll(".carousel-item img").forEach(img => {
+  img.addEventListener("click", () => {
+    lightbox.classList.add("active");
+    lightboxImg.style.display = "block";
+    lightboxContent.style.display = "none";
+    lightboxImg.src = img.src;
+  });
+});
+
+/* OUVERTURE : productions passées */
+document.querySelectorAll(".production-item").forEach(item => {
+  item.addEventListener("click", () => {
+    const details = item.querySelector(".details").innerHTML;
+
+    lightbox.classList.add("active");
+    lightboxImg.style.display = "none";
+    lightboxContent.style.display = "block";
+    lightboxContent.innerHTML = details;
+  });
+});
+
+/* OUVERTURE : conseil d’administration */
+document.querySelectorAll(".conseil-item").forEach(item => {
+  item.addEventListener("click", () => {
+    const imgSrc = item.dataset.img;
+    const details = item.querySelector(".details");
+
+    lightbox.classList.add("active");
+
+    // Afficher l'image
+    lightboxImg.style.display = "block";
+    lightboxImg.src = imgSrc;
+
+    // Afficher la description si elle existe
+    if (details) {
+      lightboxContent.style.display = "block";
+      lightboxContent.innerHTML = details.innerHTML;
+    } else {
+      lightboxContent.style.display = "none";
+    }
+  });
+});
+
+/* OUVERTURE : affiche du spectacle à l’affiche */
+const affiche = document.getElementById("affiche-click");
+if (affiche) {
+  affiche.addEventListener("click", () => {
+
+    // Image en grand
+    lightboxImg.style.display = "block";
+    lightboxImg.src = "Images/affiche-enfant-insignifiant.png";
+
+    // Résumé
+    const details = document.querySelector(".details-affiche").innerHTML;
+    lightboxContent.style.display = "block";
+    lightboxContent.innerHTML = details;
+
+    // Ouvrir la lightbox
+    lightbox.classList.add("active");
+  });
+}
+
+/* FERMETURE LIGHTBOX */
+closeBtn.addEventListener("click", () => lightbox.classList.remove("active"));
+lightbox.addEventListener("click", e => {
+  if (e.target === lightbox) lightbox.classList.remove("active");
+});
+
+/* ANIMATIONS SCROLL */
+const observer = new IntersectionObserver(entries => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) entry.target.classList.add('visible');
+  });
+}, { threshold: 0.1 });
+
+document.querySelectorAll('section, .mission-card').forEach(el => observer.observe(el));
+
+/* SCROLL DOUX AVEC OFFSET */
+document.querySelectorAll('a[href^="#"]').forEach(link => {
+  link.addEventListener('click', e => {
+    const id = link.getAttribute('href');
+    const target = document.querySelector(id);
+    if (!target) return;
+
+    e.preventDefault();
+
+    const offset = 210;
+    const y = target.getBoundingClientRect().top + window.pageYOffset - offset;
+
+    window.scrollTo({ top: y, behavior: 'smooth' });
+  });
+});
+</script>
+</body>
+</html>
