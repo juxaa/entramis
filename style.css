@@ -165,7 +165,7 @@ nav a:hover::after {
 /* MENU MOBILE — version propre et unique */
 #menu-mobile {
   position: fixed;
-  top: -100%;
+  top: -150%;
   left: 0;
   width: 100%;
   height: 100%;
@@ -1131,6 +1131,7 @@ html, body {
 #menu-mobile a:hover {
   color: var(--rouge);
 }
+
 
 
 
