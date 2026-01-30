@@ -758,7 +758,7 @@ button:focus:not(:focus-visible),
   }
 }
 html {
-  scroll-behavior: smooth;
+  scroll-behavior: auto;
   -webkit-overflow-scrolling: touch;
 }
 
@@ -1138,6 +1138,7 @@ html, body {
   overflow: hidden;
   height: 100vh;
 }
+
 
 
 
