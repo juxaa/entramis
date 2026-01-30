@@ -248,7 +248,7 @@ p {
    HERO / ACCUEIL
    ============================ */
 #accueil {
-  padding-top: 13rem;
+  padding-top: 16rem;
 }
 .hero-logo {
   height: 220px;
@@ -1131,6 +1131,7 @@ html, body {
 #menu-mobile a:hover {
   color: var(--rouge);
 }
+
 
 
 
