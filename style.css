@@ -248,7 +248,7 @@ p {
    HERO / ACCUEIL
    ============================ */
 #accueil {
-  padding-top: 13rem;
+  padding-top: 16rem;
 }
 .hero-logo {
   height: 220px;
@@ -1138,6 +1138,7 @@ html, body {
   overflow: hidden;
   height: 100vh;
 }
+
 
 
 
