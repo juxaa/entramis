@@ -1132,6 +1132,12 @@ html, body {
   color: var(--rouge);
 }
 
+.body-no-scroll {
+  overflow: hidden;
+  height: 100vh;
+}
+
+
 
 
 
