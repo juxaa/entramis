@@ -165,7 +165,7 @@ nav a:hover::after {
 /* MENU MOBILE — version propre et unique */
 #menu-mobile {
   position: fixed;
-  top: -100%;
+  top: -150%;
   left: 0;
   width: 100%;
   height: 100%;
@@ -248,7 +248,7 @@ p {
    HERO / ACCUEIL
    ============================ */
 #accueil {
-  padding-top: 16rem;
+  padding-top: 13rem;
 }
 .hero-logo {
   height: 220px;
@@ -502,11 +502,10 @@ p {
   padding: 0;
   color: var(--blanc);
   position: relative;
-  overflow-y: auto;
 }
 .lightbox-inner img {
   max-width: 450px;
-  max-height: 50vh;
+  max-height: 70vh;
   width: auto;
   height: auto;
   margin: 0 auto;
@@ -517,9 +516,8 @@ p {
   padding: 1.2rem 1.5rem;
   background: rgba(0,0,0,0.7);
   border-radius: 0 0 .5rem .5rem;
-  max-height: 70vh;
-  overflow-y: auto;
-  padding-right: 1rem;
+  max-height: 50vh;
+  overflow: auto;
 }
 .lightbox-close {
   position: absolute;
@@ -758,7 +756,7 @@ button:focus:not(:focus-visible),
   }
 }
 html {
-  scroll-behavior: auto;
+  scroll-behavior: smooth;
   -webkit-overflow-scrolling: touch;
 }
 
@@ -1133,12 +1131,6 @@ html, body {
 #menu-mobile a:hover {
   color: var(--rouge);
 }
-
-.body-no-scroll {
-  overflow: hidden;
-  height: 100vh;
-}
-
 
 
 
