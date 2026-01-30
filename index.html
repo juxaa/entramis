@@ -554,7 +554,8 @@ const closeBtn = document.getElementById("lightbox-close");
 
 /* OUVERTURE : images de la galerie */
 document.querySelectorAll(".carousel-item img").forEach(img => {
-  img.addEventListener("click", () => {
+    img.addEventListener("click", (e) => {
+    e.preventDefault();
     lightbox.classList.add("active");
     document.body.classList.add("body-no-scroll");
     lightboxImg.style.display = "block";
@@ -565,7 +566,8 @@ document.querySelectorAll(".carousel-item img").forEach(img => {
 
 /* OUVERTURE : productions passées */
 document.querySelectorAll(".production-item").forEach(item => {
-  item.addEventListener("click", () => {
+    item.addEventListener("click", (e) => {
+    e.preventDefault();
     const details = item.querySelector(".details").innerHTML;
 
     lightbox.classList.add("active");
@@ -578,7 +580,8 @@ document.querySelectorAll(".production-item").forEach(item => {
 
 /* OUVERTURE : conseil d’administration */
 document.querySelectorAll(".conseil-item").forEach(item => {
-  item.addEventListener("click", () => {
+    item.addEventListener("click", (e) => {
+    e.preventDefault();
     const imgSrc = item.dataset.img;
     const details = item.querySelector(".details");
 
@@ -600,8 +603,9 @@ document.querySelectorAll(".conseil-item").forEach(item => {
 /* OUVERTURE : affiche du spectacle à l’affiche */
 const affiche = document.getElementById("affiche-click");
 if (affiche) {
-  affiche.addEventListener("click", () => {
-
+    affiche.addEventListener("click", (e) => {
+    e.preventDefault();
+    
     // Image en grand
     lightboxImg.style.display = "block";
     lightboxImg.src = "Images/affiche-enfant-insignifiant 1.png";
@@ -656,3 +660,4 @@ document.querySelectorAll('a[href^="#"]').forEach(link => {
 </script>
 </body>
 </html>
+
