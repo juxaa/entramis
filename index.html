@@ -538,6 +538,7 @@ const closeBtn = document.getElementById("lightbox-close");
 document.querySelectorAll(".carousel-item img").forEach(img => {
   img.addEventListener("click", () => {
     lightbox.classList.add("active");
+    document.body.classList.add("body-no-scroll");
     lightboxImg.style.display = "block";
     lightboxContent.style.display = "none";
     lightboxImg.src = img.src;
@@ -550,6 +551,7 @@ document.querySelectorAll(".production-item").forEach(item => {
     const details = item.querySelector(".details").innerHTML;
 
     lightbox.classList.add("active");
+    document.body.classList.add("body-no-scroll");
     lightboxImg.style.display = "none";
     lightboxContent.style.display = "block";
     lightboxContent.innerHTML = details;
@@ -563,8 +565,7 @@ document.querySelectorAll(".conseil-item").forEach(item => {
     const details = item.querySelector(".details");
 
     lightbox.classList.add("active");
-
-    // Afficher l'image
+    document.body.classList.add("body-no-scroll");
     lightboxImg.style.display = "block";
     lightboxImg.src = imgSrc;
 
@@ -594,13 +595,20 @@ if (affiche) {
 
     // Ouvrir la lightbox
     lightbox.classList.add("active");
+    document.body.classList.add("body-no-scroll");
   });
 }
 
-/* FERMETURE LIGHTBOX */
-closeBtn.addEventListener("click", () => lightbox.classList.remove("active"));
+closeBtn.addEventListener("click", () => {
+  lightbox.classList.remove("active");
+  document.body.classList.remove("body-no-scroll");
+});
+
 lightbox.addEventListener("click", e => {
-  if (e.target === lightbox) lightbox.classList.remove("active");
+  if (e.target === lightbox) {
+    lightbox.classList.remove("active");
+    document.body.classList.remove("body-no-scroll");
+  }
 });
 
 /* ANIMATIONS SCROLL */
@@ -630,6 +638,7 @@ document.querySelectorAll('a[href^="#"]').forEach(link => {
 </script>
 </body>
 </html>
+
 
 
 
