@@ -506,7 +506,7 @@ p {
 }
 .lightbox-inner img {
   max-width: 450px;
-  max-height: 70vh;
+  max-height: 50vh;
   width: auto;
   height: auto;
   margin: 0 auto;
@@ -1138,6 +1138,7 @@ html, body {
   overflow: hidden;
   height: 100vh;
 }
+
 
 
 
