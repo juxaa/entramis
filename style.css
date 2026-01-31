@@ -497,18 +497,17 @@ p {
   pointer-events: auto;
 }
 
-.lightbox-inner {
-  max-width: 90%;
-  max-height: 90vh;              /* limite globale */
-  background: transparent;
-  border-radius: .5rem;
-  box-shadow: 0 0 25px rgba(0,0,0,0.8);
-  padding: 0;
-  color: var(--blanc);
-  position: relative;
-  display: flex;
-  flex-direction: column;        /* image + texte en colonne */
-}
+.lightbox-inner { 
+   max-width: 90%;
+   max-height: 90vh; 
+   background: transparent; 
+   border-radius: .5rem; 
+   box-shadow: 0 0 25px rgba(0,0,0,0.8); 
+   padding: 0; color: var(--blanc); 
+   position: relative; 
+   display: flex; 
+   flex-direction: column; 
+   overflow: hidden; /* 🔥 important */ }
 
 .lightbox-inner img {
   max-width: 100%;
@@ -520,12 +519,13 @@ p {
   border-radius: 10px 10px 0 0;
 }
 
-.lightbox-content {
-  padding: 1.2rem 1.5rem;
-  background: rgba(0,0,0,0.7);
-  border-radius: 0 0 .5rem .5rem;
-  overflow-y: auto;              /* 👉 le scroll se fait ici */
-}
+.lightbox-content { 
+   padding: 1.2rem 1.5rem;
+   background: rgba(0,0,0,0.7); 
+   border-radius: 0 0 .5rem .5rem; 
+   flex: 1; /* 🔥 prend la place restante */ 
+   min-height: 0; /* 🔥 autorise le scroll interne */ 
+   overflow-y: auto; /* 👉 le scroll se fait ici */ }
 
 .lightbox-close {
   position: absolute;
@@ -1139,6 +1139,7 @@ html, body {
 #menu-mobile a:hover {
   color: var(--rouge);
 }
+
 
 
 
