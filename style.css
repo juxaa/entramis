@@ -75,6 +75,7 @@ header {
   backdrop-filter: blur(6px);
   border-bottom: 1px solid #222;
   z-index: 1000;
+  transition: transform 0.4s ease, opacity 0.4s ease;
 }
 .header-inner {
   display: flex;
@@ -1146,6 +1147,7 @@ header.hide-on-scroll {
   transition: transform 0.4s ease, opacity 0.4s ease;
   transition-delay: 0.1s;
 }
+
 
 
 
