@@ -27,7 +27,9 @@
     })(document, window, 'BrevoConversations');
 </script>
   
-  <style>
+  <!-- Begin Brevo Form -->
+<!-- START - We recommend to place the below code in head tag of your website html  -->
+<style>
   @font-face {
     font-display: block;
     font-family: Roboto;
@@ -72,7 +74,8 @@
   }
 </style>
 <link rel="stylesheet" href="https://sibforms.com/forms/end-form/build/sib-styles.css">
-
+<!--  END - We recommend to place the above code in head tag of your website html -->
+  
 </head>
 
 <body>
@@ -543,15 +546,15 @@
       </div>
     </div>
     <div></div>
-    <div id="sib-container" class="sib-container--large sib-container--vertical" style="text-align:center; background-color:rgba(255,255,255,1); max-width:540px; border-radius:3px; border-width:1px; border-color:#C0CCD9; border-style:solid; direction:ltr">
+    <div id="sib-container" class="sib-container--large sib-container--vertical" style="text-align:center; background-color:rgba(0,0,0,1); max-width:540px; border-radius:3px; border-width:3px; border-color:#a6304c; border-style:solid; direction:ltr">
       <form id="sib-form" method="POST" action="https://a15b609b.sibforms.com/serve/MUIFACjnX7y63fAdVWj86ZTDBkJiRNzXluqaV8Bvx-0IVeyOVxxSkocW6iTKs9UHnfiH_xX6CtPbiDWcbHrJs03SYd_nkYAesjNoCt1CPSGYsJJ-LkHBWyHPtmKV835PVJ86koRCB_G8UwHVFnXUihBkh8cfHY0aF4AWlwUyiseloI8q3zIz7l04AdSIqvsFsOaTEnrlhidpkmADgA==" data-type="subscription">
         <div style="padding: 8px 0;">
-          <div class="sib-form-block" style="font-size:32px; text-align:left; font-weight:700; font-family:Futura, sans-serif; color:#3C4858; background-color:transparent; text-align:left">
+          <div class="sib-form-block" style="font-size:32px; text-align:left; font-weight:700; font-family:Futura, sans-serif; color:#ffffff; background-color:transparent; text-align:left">
             <p>Infolettre d'Entr'Amis Lévis</p>
           </div>
         </div>
         <div style="padding: 8px 0;">
-          <div class="sib-form-block" style="font-size:16px; text-align:left; font-family:Futura, sans-serif; color:#3C4858; background-color:transparent; text-align:left">
+          <div class="sib-form-block" style="font-size:16px; text-align:left; font-family:Futura, sans-serif; color:#ffffff; background-color:transparent; text-align:left">
             <div class="sib-text-form-block">
               <p>Inscrivez-vous à notre infolettre pour suivre nos actualités.</p>
             </div>
@@ -570,9 +573,6 @@
 
               <label class="entry__error entry__error--primary" style="font-size:16px; text-align:left; font-family:Helvetica, sans-serif; color:#661d1d; background-color:#ffeded; border-radius:3px; border-color:#ff4949;">
               </label>
-              <label class="entry__specification" style="font-size:12px; text-align:left; font-family:Helvetica, sans-serif; color:#8390A4; text-align:left">
-                Veuillez fournir votre adresse email pour vous inscrire. Ex. : abc@gmail.com
-              </label>
             </div>
           </div>
         </div>
@@ -587,21 +587,7 @@
           </div>
         </div>
         <div style="padding: 8px 0;">
-          <div class="sib-captcha sib-form-block">
-            <div class="form__entry entry_block">
-              <div class="form__label-row ">
-                <script>
-                  function handleCaptchaResponse() {
-                    var event = new Event('captchaChange');
-                    document.getElementById('sib-captcha').dispatchEvent(event);
-                  }
-                </script>
-                <div class="g-recaptcha sib-visible-recaptcha" id="sib-captcha" data-sitekey="6Lcx6nIsAAAAAKZM2Yu0wvJLtbNDLEj1ijrRgTFs" data-callback="handleCaptchaResponse" style="direction:ltr"></div>
-              </div>
-              <label class="entry__error entry__error--primary" style="font-size:16px; text-align:left; font-family:Helvetica, sans-serif; color:#661d1d; background-color:#ffeded; border-radius:3px; border-color:#ff4949;">
-              </label>
-            </div>
-          </div>
+          <div class="g-recaptcha" data-sitekey="6Lcx6nIsAAAAAKZM2Yu0wvJLtbNDLEj1ijrRgTFs" data-callback="invisibleCaptchaCallback" data-size="invisible" onclick="executeCaptcha"></div>
         </div>
 
         <input type="text" name="email_address_check" value="" class="input--hidden">
@@ -842,9 +828,10 @@ window.addEventListener("scroll", () => {
 <script defer src="https://sibforms.com/forms/end-form/build/main.js"></script>
 
 <script src="https://www.google.com/recaptcha/api.js?hl=fr"></script>
-  
+
 </body>
 </html>
+
 
 
 
