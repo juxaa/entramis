@@ -1148,6 +1148,11 @@ header.hide-on-scroll {
   transition-delay: 0.1s;
 }
 
+.social-icons a[href*="instagram"] {
+  display: none;
+}
+
+
 
 
 
