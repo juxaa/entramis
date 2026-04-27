@@ -79,6 +79,13 @@ header {
   transition: transform 0.4s ease, opacity 0.4s ease;
 }
 
+header img {
+  max-height: 120px;
+  width: auto;
+  display: block;
+}
+
+
 /* VERSION PROPRE */
 .header-inner {
   display: flex;
@@ -155,7 +162,7 @@ section {
   opacity: 0;
   transform: translateY(40px);
   transition: opacity .8s ease, transform .8s ease;
-  scroll-margin-top: 210px;
+  scroll-margin-top: 170px;
   will-change: opacity, transform;
 }
 section.visible {
