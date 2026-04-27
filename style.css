@@ -1150,6 +1150,11 @@ section {
   margin-top: 2rem !important;
 }
 
+.spectacle-block .btn {
+  display: none !important;
+}
+
+
 
 
 
