@@ -77,85 +77,31 @@ header {
   z-index: 1000;
   transition: transform 0.4s ease, opacity 0.4s ease;
 }
+
+/* VERSION PROPRE */
 .header-inner {
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: flex-start; /* logo + menu alignés */
+  gap: 3rem; /* espace propre */
   width: 100%;
-  gap: 1rem;
 }
-header img {
-  height: 140px;
-  filter: none;
-  transition: transform .3s ease, filter .3s ease;
-}
-header img:hover {
-  transform: scale(1.06);
-  filter: brightness(1.4) drop-shadow(0 0 18px rgba(200,33,39,0.6));
-}
-@media (max-width: 900px) {
-  header img { height: 90px; }
-}
-@media (max-width: 600px) {
-  header img { height: 70px; }
-}
-/* NAV */
+
 nav {
   display: flex;
   justify-content: center;
   flex: 0 1 auto;
-  margin-left: 2rem;
+  margin-left: 0; /* on enlève le décalage */
   text-transform: uppercase;
   font-size: .85rem;
   letter-spacing: .14em;
   gap: 1.6rem;
 }
-nav a {
-  text-decoration: none;
-  color: var(--blanc);
-  position: relative;
-}
-nav a::after {
-  content: "";
-  position: absolute;
-  left: 0;
-  bottom: -3px;
-  width: 0;
-  height: 2px;
-  background: var(--rouge);
-  transition: .2s;
-}
-nav a:hover::after {
-  width: 100%;
-}
-/* ACTION BUTTONS HEADER */
+
 .header-actions {
-  display: flex;
-  gap: 0.8rem;
-  margin-left: 1.5rem;
+  display: none !important; /* tu n’as plus de bouton */
 }
-.header-btn {
-  background: linear-gradient(to bottom, #2a2a2a, #0f0f0f);
-  color: var(--blanc);
-  border: 1px solid rgba(255,255,255,0.12);
-  padding: 0.85rem 1.6rem;
-  border-radius: 12px;
-  font-weight: 700;
-  font-size: 1.05rem;
-  cursor: pointer;
-  white-space: nowrap;
-  box-shadow:
-    0 4px 10px rgba(0,0,0,0.6),
-    inset 0 1px 2px rgba(255,255,255,0.15);
-  transition: transform 0.15s ease, box-shadow 0.2s ease, background 0.2s ease;
-}
-.header-btn:hover {
-  background: linear-gradient(to bottom, #3a3a3a, #111);
-  transform: translateY(-3px);
-  box-shadow:
-    0 6px 16px rgba(0,0,0,0.75),
-    inset 0 1px 3px rgba(255,255,255,0.2);
-}
+
 /* HAMBURGER & MENU MOBILE */
 .hamburger {
   display: none;
@@ -1187,14 +1133,23 @@ header.hide-on-scroll {
   display: none;
 }
 
+section {
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+}
+
+#spectacles {
+  padding-top: 7rem; /* pour compenser le header fixe */
+}
+
 .galerie-evenement {
-  margin-bottom: 3.5rem !important;
+  margin-bottom: 3rem !important;
 }
 
 .spectacle-block .btn {
   margin-top: 2rem !important;
-  display: inline-block;
 }
+
 
 
 
