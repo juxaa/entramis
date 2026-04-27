@@ -1187,6 +1187,15 @@ header.hide-on-scroll {
   display: none;
 }
 
+.galerie-evenement {
+  margin-bottom: 3.5rem !important;
+}
+
+.spectacle-block .btn {
+  margin-top: 2rem !important;
+  display: inline-block;
+}
+
 
 
 
