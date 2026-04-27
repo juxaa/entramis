@@ -23,6 +23,7 @@ body {
   color: var(--blanc);
   overflow-x: hidden;
   line-height: 1.5;
+  padding-top: 160px;
 }
 /* ============================
    BORDURES VELOURS
@@ -192,10 +193,10 @@ p {
   line-height: 1.6;
 }
 /* ============================
-   HERO / ACCUEIL
+   HERO / 
    ============================ */
 #accueil {
-  padding-top: 16rem;
+  padding-top: 6rem;
 }
 .hero-logo {
   height: 220px;
