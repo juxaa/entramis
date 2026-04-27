@@ -606,7 +606,6 @@
   <p>© Troupe de théâtre Entr'Amis Lévis — Tous droits réservés</p>
 </footer>
 
-<!-- SCRIPT -->
 <script>
 /* MENU MOBILE */
 const hamburger = document.getElementById('hamburger');
@@ -621,6 +620,7 @@ document.querySelectorAll('#menu-mobile a').forEach(link => {
     setTimeout(() => menuMobile.classList.remove('open'), 200);
   });
 });
+
 menuMobile.addEventListener("click", e => {
   if (e.target === menuMobile) {
     menuMobile.classList.remove("open");
@@ -663,11 +663,9 @@ document.querySelectorAll(".conseil-item").forEach(item => {
 
     lightbox.classList.add("active");
 
-    // Afficher l'image
     lightboxImg.style.display = "block";
     lightboxImg.src = imgSrc;
 
-    // Afficher la description si elle existe
     if (details) {
       lightboxContent.style.display = "block";
       lightboxContent.innerHTML = details.innerHTML;
@@ -681,29 +679,22 @@ document.querySelectorAll(".conseil-item").forEach(item => {
 const affiche = document.getElementById("affiche-click");
 if (affiche) {
   affiche.addEventListener("click", () => {
-
-    // Image en grand
     lightboxImg.style.display = "block";
     lightboxImg.src = "Images/affiche-enfant-insignifiant 1.jpg";
 
-    // Résumé
     const details = document.querySelector(".details-affiche").innerHTML;
     lightboxContent.style.display = "block";
     lightboxContent.innerHTML = details;
 
-    // Ouvrir la lightbox
     lightbox.classList.add("active");
   });
 }
+
 /* OUVERTURE : galerie d'événement */
 function ouvrirLightbox(src) {
   lightbox.classList.add("active");
-
-  // Afficher l'image
   lightboxImg.style.display = "block";
   lightboxImg.src = src;
-
-  // Pas de texte pour ces images
   lightboxContent.style.display = "none";
 }
 
@@ -722,7 +713,7 @@ const observer = new IntersectionObserver(entries => {
 
 document.querySelectorAll('section, .mission-card').forEach(el => observer.observe(el));
 
-/* SCROLL DOUX AVEC OFFSET */
+/* SCROLL DOUX AVEC OFFSET — VERSION UNIQUE */
 document.querySelectorAll('a[href^="#"]').forEach(link => {
   link.addEventListener('click', e => {
     const id = link.getAttribute('href');
@@ -731,22 +722,7 @@ document.querySelectorAll('a[href^="#"]').forEach(link => {
 
     e.preventDefault();
 
-    const offset = 210;
-    const y = target.getBoundingClientRect().top + window.pageYOffset - offset;
-
-    window.scrollTo({ top: y, behavior: 'smooth' });
-  });
-});
-/* SCROLL DOUX AVEC OFFSET */
-document.querySelectorAll('a[href^="#"]').forEach(link => {
-  link.addEventListener('click', e => {
-    const id = link.getAttribute('href');
-    const target = document.querySelector(id);
-    if (!target) return;
-
-    e.preventDefault();
-
-    const offset = 210;
+    const offset = 170; // hauteur réelle du header
     const y = target.getBoundingClientRect().top + window.pageYOffset - offset;
 
     window.scrollTo({ top: y, behavior: 'smooth' });
@@ -769,42 +745,6 @@ window.addEventListener("scroll", () => {
   lastScrollTop = scrollTop <= 0 ? 0 : scrollTop;
 });
 </script>
-  <!-- START - We recommend to place the below code in footer or bottom of your website html  -->
-<script>
-  window.REQUIRED_CODE_ERROR_MESSAGE = 'Veuillez choisir un code pays';
-  window.LOCALE = 'fr';
-  window.EMAIL_INVALID_MESSAGE = window.SMS_INVALID_MESSAGE = "Les informations que vous avez fournies ne sont pas valides. Veuillez vérifier le format du champ et réessayer.";
-
-  window.REQUIRED_ERROR_MESSAGE = "Vous devez renseigner ce champ. ";
-
-  window.GENERIC_INVALID_MESSAGE = "Les informations que vous avez fournies ne sont pas valides. Veuillez vérifier le format du champ et réessayer.";
-
-
-
-
-  window.translation = {
-    common: {
-      selectedList: '{quantity} liste sélectionnée',
-      selectedLists: '{quantity} listes sélectionnées',
-      selectedOption: '{quantity} sélectionné',
-      selectedOptions: '{quantity} sélectionnés',
-    }
-  };
-
-  var AUTOHIDE = Boolean(0);
-</script>
-
-<script defer src="https://sibforms.com/forms/end-form/build/main.js"></script>
-
-<script src="https://www.google.com/recaptcha/api.js?hl=fr"></script>
-
-  <div id="lightbox" class="lightbox">
-  <div class="lightbox-inner">
-    <img id="lightbox-img" src="" alt="">
-    <div id="lightbox-content"></div>
-    <span id="lightbox-close" class="lightbox-close">&times;</span>
-  </div>
-</div>
 
 </body>
 </html>
