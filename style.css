@@ -1184,6 +1184,10 @@ section {
   display: none !important;
 }
 
+nav a {
+  color: var(--blanc) !important;
+  text-decoration: none !important;
+}
 
 
 
