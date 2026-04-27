@@ -244,7 +244,7 @@
 
 </div>
 
-    <a href="#productions" class="btn">Voir les spectacles passés</a>
+    <a href="#productions" class="btn">Voir les productions passés</a>
 
   </div>
 </section>
@@ -827,6 +827,17 @@ if (affiche) {
     // Ouvrir la lightbox
     lightbox.classList.add("active");
   });
+}
+/* OUVERTURE : galerie d'événement */
+function ouvrirLightbox(src) {
+  lightbox.classList.add("active");
+
+  // Afficher l'image
+  lightboxImg.style.display = "block";
+  lightboxImg.src = src;
+
+  // Pas de texte pour ces images
+  lightboxContent.style.display = "none";
 }
 
 /* FERMETURE LIGHTBOX */
