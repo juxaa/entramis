@@ -34,7 +34,6 @@
       <a href="#spectacles">Spectacles</a>
       <a href="#apropos">À propos</a>
       <a href="#productions">Productions passées</a>
-      <a href="#equipe">Équipe</a>
       <a href="#galerie">Galerie</a>
       <a href="#partenaires">Partenaires</a>
       <a href="#contact">Contact</a>
@@ -51,7 +50,6 @@
     <a href="#spectacles">Spectacles</a>
     <a href="#apropos">À propos</a>
     <a href="#productions">Productions passées</a>
-    <a href="#equipe">Équipe</a>
     <a href="#galerie">Galerie</a>
     <a href="#partenaires">Partenaires</a>
     <a href="#contact">Contact</a>
@@ -348,102 +346,6 @@
   </div>
 </section>
 
-<!-- ÉQUIPE -->
-<section id="equipe" class="section-velours">
-  <h2><span style="color:var(--rouge)">Équipe</span> & conseil d’administration</h2>
-
-  <div class="card">
-    <h3>Conseil d’administration 2025-2026</h3>
-
-    <div class="conseil-grid">
-
-      <div class="conseil-item" data-img="Images/conseil-jean.jpg">
-        <img src="Images/conseil-jean.jpg" alt="Jean Boucher">
-        <p>Jean Boucher<br><span>Président-trésorier</span></p>
-
-        <div class="details" style="display:none;">
-          <h3>Jean Boucher</h3>
-          <p>Président-trésorier de la troupe, Jean est un pilier de l’organisation. 
-          Rigoureux, calme et toujours disponible, il veille à la santé financière 
-          de la troupe tout en soutenant activement les activités de celle-ci. 
-          Son sens de l’organisation et son dévouement permettent à Entr’Amis Lévis 
-          de grandir année après année.</p>
-        </div>
-      </div>
-
-      <div class="conseil-item" data-img="Images/conseil-colombe.jpg">
-        <img src="Images/conseil-colombe.jpg" alt="Colombe Brochu">
-        <p>Colombe Brochu<br><span>Secrétaire</span></p>
-
-        <div class="details" style="display:none;">
-          <h3>Colombe Brochu</h3>
-          <p>Secrétaire du conseil, Colombe est reconnue pour sa précision, 
-          sa mémoire impressionnante et son efficacité. Elle assure le suivi 
-          administratif, coordonne les communications internes et veille à ce 
-          que chaque réunion soit productive et bien documentée.</p>
-        </div>
-      </div>
-
-      <div class="conseil-item" data-img="Images/conseil-catherine.jpg">
-        <img src="Images/conseil-catherine.jpg" alt="Catherine Chabot">
-        <p>Catherine Chabot<br><span>Coordonnatrice de production</span></p>
-
-        <div class="details" style="display:none;">
-          <h3>Catherine Chabot</h3>
-          <p>Coordonnatrice de production, 
-  Catherine s’est rapidement imposée comme une présence essentielle. Organisée, 
-  efficace et dotée d’un calme rassurant, elle apporte un regard neuf et une 
-  énergie rafraîchissante à la troupe. Grâce à son sens du détail et à sa 
-  disponibilité, elle contribue à rendre chaque projet plus fluide et agréable 
-  pour toute l’équipe.</p>
-</div>
-
-      </div>
-
-      <div class="conseil-item" data-img="Images/conseil-sandy.jpg">
-        <img src="Images/conseil-sandy.jpg" alt="Sandy Fillion">
-        <p>Sandy Fillion<br><span>Vice-présidente</span></p>
-
-        <div class="details" style="display:none;">
-          <h3>Sandy Fillion</h3>
-          <p>Vice-présidente, Sandy est une force rassembleuse. Toujours prête 
-          à aider, elle soutient autant l’équipe artistique que l’équipe 
-          administrative. Son leadership bienveillant et son enthousiasme 
-          contagieux contribuent à maintenir une ambiance chaleureuse 
-          au sein de la troupe.</p>
-        </div>
-      </div>
-
-      <div class="conseil-item" data-img="Images/conseil-olivier.jpg">
-        <img src="Images/conseil-olivier.jpg" alt="Olivier Roy">
-        <p>Olivier Roy<br><span>Coordonnateur de production et responsable des communications</span></p>
-
-        <div class="details" style="display:none;">
-          <h3>Olivier Roy</h3>
-          <p>Coordonnateur de production, Olivier est reconnu pour sa polyvalence et son sens pratique. Toujours prêt à donner un coup de main, il sait garder son calme même dans les moments les plus chargés. Sa débrouillardise et son esprit d’équipe en font un soutien précieux pour les comédiens comme pour l’organisation, contribuant à la fluidité et à la qualité des activités de la troupe.</p>
-        </div>
-      </div>
-
-      <div class="conseil-item" data-img="Images/conseil-andreanne.jpg">
-  <img src="Images/conseil-andreanne.jpg" alt="Andréanne Béland">
-  <p>Andréanne Béland<br><span>Metteure en scène</span></p>
-
-  <div class="details" style="display:none;">
-    <h3>Andréanne Béland</h3>
-    <p>
-      Metteure en scène passionnée et membre engagée d’Entr’Amis depuis plusieurs années, 
-      Andréanne possède plus d’une corde à son arc. Improvisation, jeu, direction d’acteurs : 
-      rien ne l’arrête. Son énergie contagieuse, sa créativité et son sens du rythme scénique 
-      donnent vie à des productions vibrantes, humaines et profondément ancrées dans l’esprit 
-      de la troupe.
-    </p>
-  </div>
-</div>
-
-    </div>
-  </div>
-</section>
-
 <!-- GALERIE -->
 <section id="galerie">
   <h2><span style="color:var(--rouge)">Galerie</span> photos</h2>
@@ -650,26 +552,6 @@ document.querySelectorAll(".production-item").forEach(item => {
     lightboxImg.style.display = "none";
     lightboxContent.style.display = "block";
     lightboxContent.innerHTML = details;
-  });
-});
-
-/* OUVERTURE : conseil d’administration */
-document.querySelectorAll(".conseil-item").forEach(item => {
-  item.addEventListener("click", () => {
-    const imgSrc = item.dataset.img;
-    const details = item.querySelector(".details");
-
-    lightbox.classList.add("active");
-
-    lightboxImg.style.display = "block";
-    lightboxImg.src = imgSrc;
-
-    if (details) {
-      lightboxContent.style.display = "block";
-      lightboxContent.innerHTML = details.innerHTML;
-    } else {
-      lightboxContent.style.display = "none";
-    }
   });
 });
 
